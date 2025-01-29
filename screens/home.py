@@ -5,7 +5,7 @@ def main():
     st.markdown("<h1 style='text-align: center; font-size: 3em;'>Artify.ai</h1>", unsafe_allow_html=True)
     st.markdown("<h2 style='text-align: center; font-size: 2em;'>AI Image Generation with FLUX</h2><hr>", unsafe_allow_html=True)
     
-    st.image("assets/girl-closeup.png", caption="Image generated using FLUX model", use_column_width=True)
+    st.image("assets/girl-closeup.png", caption="Image generated using FLUX model", use_container_width=True)
 
     # Introduction to FLUX
     st.header("What is FLUX?")
@@ -15,9 +15,9 @@ def main():
     )
     
     # Placeholder for FLUX Image
-    st.image("assets/flux-comp2.png", use_column_width=True)
-    st.image("assets/flux-comp4.png", use_column_width=True)
-    st.image("assets/flux-comp6.png", caption="FLUX Models Overview", use_column_width=True)
+    st.image("assets/flux-comp2.png", use_container_width=True)
+    st.image("assets/flux-comp4.png", use_container_width=True)
+    st.image("assets/flux-comp6.png", caption="FLUX Models Overview", use_container_width=True)
 
     # How FLUX Works
     st.header("How FLUX Works")
@@ -28,7 +28,7 @@ def main():
     )
     
     # Placeholder for How FLUX Works Image
-    st.image("assets/working_flux.webp", caption="How FLUX Works", use_column_width=True)
+    st.image("assets/working_flux.webp", caption="How FLUX Works", use_container_width=True)
 
     # Explanation of Stable Diffusion
     st.header("Relation to Stable Diffusion")
