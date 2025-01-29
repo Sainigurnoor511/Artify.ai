@@ -109,9 +109,9 @@ def main():
     st.title("Flux Schnell Image Generation")
 
     # Prompt input
-    prompt = st.text_area(":orange[**Enter prompt**]", value="high-resolution photograph, woman, UHD, photorealistic, shot on a Sony A7III --chaos 20 --ar 1:2 --style raw --stylize 250")
+    prompt = st.text_area(":orange[**Enter prompt**]", value="close-up of a steaming cup of hot chocolate, topped with fluffy marshmallows and drizzled with rich chocolate syrup, cozy setting with soft lighting, UHD, photorealistic, shot on a Canon EOS M50 Mark II --chaos 5 --ar 4:3 --style raw --stylize 250")
 
-    negative_prompt = st.text_area(":orange[**Elements to avoid in image**]", value="Exclude dark skies, urban elements, harsh colors, and chaotic scenes. Avoid jagged landscapes and overly dramatic contrasts.")
+    negative_prompt = st.text_area(":orange[**Elements to avoid in image**]", value="Exclude spilled chocolate, cold or hardened marshmallows, poorly lit scenes, or artificial-looking textures. Avoid messy backgrounds or overly saturated colors.")
     
     resolution = st.selectbox("Resolution", ["256x256", "512x512", "1024x1024"], index=1)
     width, height = map(int, resolution.split("x"))
